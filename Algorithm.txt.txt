@@ -1,0 +1,61 @@
+ALGORITHM ASSIGNMENT 5
+
+Goal: To familiarize ourselves with the concept of inheritance, classes and objects in java.
+
+Input: 
+* Ask the user what they would like to do: 1) load the employee file or 2) exit the program
+
+Output:
+* if user inputs 1, than further load employee information from the file (read the text file)
+	* Than ask the user what they would like to do further: 1) Print Employee Information, 2) Enter the hours worked, 3) Calculate Paychecks or 4) Exit the program
+	* If user enters 1 print the employee information that was stored in an array from the text file.
+	* If user enters 2 prompt the user to enter the number of hours worked by employee
+	* If user enters 3 calculate the employee pay check by multiplying the hours worked with the pay rate
+	* If user enters 4 exit the loop
+* if user inputs 2, exit from the loop
+
+Requirements:
+
+* An Employee class that has all the important attributes and methods defined
+* A Pharmacy Manager class that is a subclass of employee that is it inherits the properties and methods of employee class
+* A Staff Pharmacist class that is a subclass of employee that is it inherits the properties and methods of employee class
+* A Staff Technician class that is a subclass of employee that is it inherits the properties and methods of employee class
+* A Senior Technician class that is a subclass of employee that is it inherits the properties and methods of employee class
+* A driver class which collects all the information creates an employee object and push them in to stack and pop them when asked.
+
+Step – by – Step Details:
+
+1. Ask the user what they would like to do: 1) load the employee file or 2) exit the program
+2. If the user enters 1 print that the employees are loaded from the file.
+3. Than further ask the user what they would like to do: 1) Print Employee Information, 2) Enter the hours worked, 3) Calculate Paychecks or 4) Exit the program
+4. If user enters one than read the text file provided line by line and store it in an array. Than create four employee objects and pass array as parameter. 
+5. In each of the employee objects exist 4 respective classes. 
+	a) Pharmacy Manager
+	b) Staff Pharmacist
+	c) Pharmacy Technician
+	d) Senior Technician
+assign the values to the data elements of the array that is the first element is the job ID of the employee, the second element is the Employee ID, the third element is first name of the employee and the fourth element is the last name.
+6. Define a method in employee class that prints the employee information in the specified format.
+7. if user inputs 1, print employees information that is stored in an array using the method defined in the employee class. 
+8. if user inputs 2, prompt the user to enter the number of hours worked by the employees. 
+9. if user inputs 3, prior to entering the hours worked than hover the user by asking them to enter the hours worked by employee.
+10. If user enters 3 after entering the hours worked by the employees than multiply the hourly rate of the employee objects with the number of hours worked and print their salary on to the screen with the format required.
+11. If the user enters 4 than exit the loop else repeat the same steps from step 3-11.
+
+
+PART A
+1) In order to push an element on the stack (store an element on stack in order) we need to check if the stack is full
+2) If the stack is full we cannot add any further element and hence we need to throw an error
+3) if the stack is not full than we can top pointer to the next level. The top pointer is one which is the top most element of stack so in order to push element to stack stack must not be full hence we can push the item on stack by incrementing the top by one.
+4)Also you can pop the element from the stack in order to display to the user.
+5) To pop the elements from the stack we need to check if the stack is empty because if the stack is empty we cannot pop any elements and hence it throws an error.
+6) if the stack is not empty we can pop the top most element as stack is last in first out. and decrease the top value by one hence we did pop an element from the stack.
+
+PART B
+1) To represent the data elements we do need to define a separate class called student class.
+2) Up here we can check for students name, id, gpa and address.
+3) and also check for data that is not available and handle that properly.
+
+PART C
+1) The address is further split in to its components namely address 1, address 2, city, state, postal code.
+2) this information is further retrieved from the data by reading the text files and storing the data pieces in an array and further accessing these elements.
